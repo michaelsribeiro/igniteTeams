@@ -18,7 +18,9 @@ const App = () => {
         backgroundColor="transparent"
       />
       { fontsLoaded ? 
-        <SafeAreaView>
+        <SafeAreaView
+          style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 20}}
+        >
           <Groups />
         </SafeAreaView> :
           <Loading />

@@ -12,7 +12,9 @@ const Groups = () => {
           title="Turmas"
           subtitle="Jogue com a sua turma"
         />
-        <GroupCard  title='Galera da AMHP'/>
+        <GroupCard 
+          title='Galera da AMHP'
+        />
     </Container>
   );
 }
