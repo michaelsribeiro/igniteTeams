@@ -1,10 +1,10 @@
 import { SafeAreaView } from 'react-native';
 import { StatusBar } from 'react-native';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import theme from '@theme/index';
-import Players from '@screens/Players';
+import Groups from '@screens/Groups';
 import Loading from '@components/Loading';
 
 const App = () => {
@@ -21,9 +21,9 @@ const App = () => {
         <SafeAreaView
           style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 24}}
         >
-          <Players />
+          <Groups />
         </SafeAreaView> :
-          <Loading />
+        <Loading />
        }
     </ThemeProvider>    
     );
