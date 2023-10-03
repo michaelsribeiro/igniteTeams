@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import theme from '@theme/index';
-import Groups from '@screens/Groups';
+import NewGroup from '@screens/NewGroup';
 import Loading from '@components/Loading';
 
 const App = () => {
@@ -19,9 +19,9 @@ const App = () => {
       />
       { fontsLoaded ? 
         <SafeAreaView
-          style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 20}}
+          style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 24}}
         >
-          <Groups />
+          <NewGroup />
         </SafeAreaView> :
           <Loading />
        }

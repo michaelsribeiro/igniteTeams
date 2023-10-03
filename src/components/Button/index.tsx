@@ -11,7 +11,7 @@ const Button = ({ title, type = 'SUCCESS', ...rest }: Props) => {
     return (
         <Container 
             type={type}
-            {...rest}
+            {...rest}            
         >
             <BtnText>
                 {title}
