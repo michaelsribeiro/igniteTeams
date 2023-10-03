@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import theme from '@theme/index';
-import NewGroup from '@screens/NewGroup';
+import Players from '@screens/Players';
 import Loading from '@components/Loading';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
         <SafeAreaView
           style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 24}}
         >
-          <NewGroup />
+          <Players />
         </SafeAreaView> :
           <Loading />
        }
