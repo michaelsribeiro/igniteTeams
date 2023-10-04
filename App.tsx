@@ -1,4 +1,4 @@
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
@@ -18,9 +18,7 @@ const App = () => {
         backgroundColor="transparent"
       />
       { fontsLoaded ? 
-        <SafeAreaView
-          style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, padding: 24}}
-        >
+        <SafeAreaView style={{backgroundColor: theme.COLORS.GRAY_600, flex: 1, paddingVertical: 34, paddingHorizontal: 24}}>
           <Groups />
         </SafeAreaView> :
         <Loading />
